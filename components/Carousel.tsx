@@ -11,7 +11,7 @@ const Carousel = () => {
                   <Link href='/about/#meaning'>
                       <a className='boxed yellow_cta'>what's behind our name</a>
                   </Link>
-                </div> 
+                </div>
                 <div className='slide_2'>
                   <Link href='/approach/#founder'>
                       <a className='boxed black_cta meet_click_through'>meet our founder</a>

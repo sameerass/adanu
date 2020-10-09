@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const MobileNavigation = () => {
-    return(<nav className='mobile_hide mobile_menu_wrapper'>
+  return(<nav className='mobile_hide mobile_menu_wrapper'>
             <div className='menu-mobilemenu-container'>
                 <ul id='menu-mobilemenu' className='menu'>
                     <li id='menu-item-103' className='menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-103'>
@@ -76,8 +76,8 @@ const MobileNavigation = () => {
                         </ul>
                     </li>
                 </ul>
-            </div>  
+            </div>
     </nav>);
-}
+};
 
 export default MobileNavigation;

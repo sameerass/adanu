@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Navigation from './Navigation';
 
 const Header = () => {
-    return (<header className='green'>
+  return (<header className='green'>
             <Link href='/'><a className='logo yellow'>Adanu</a></Link>
             <a className='mobile hamburger'>Menu</a>
             <Navigation/>

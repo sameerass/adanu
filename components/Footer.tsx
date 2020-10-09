@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 const Footer = () => {
-    return (<footer>
-        <nav className='footer_menus'>  
+  return (<footer>
+        <nav className='footer_menus'>
             <ul className='six'>
                 <li className='ul_head'>
                     <Link href='/approach'><a>Approach</a></Link>
@@ -17,14 +17,14 @@ const Footer = () => {
                 </li>
                 <li>
                     <Link href='/about/ghana'><a>Ghana</a></Link>
-                </li>   
+                </li>
                 <li>
                     <Link href='/volunteer'><a>Offerings</a></Link>
                 </li>
                 <li>
                     <Link href='/volunteer/what-you-should-know'><a>FAQ</a></Link>
                 </li>
-            </ul>      
+            </ul>
             <ul className='six'>
                 <li className='ul_head'>
                     <Link href='/give'><a>Give</a></Link>
@@ -56,7 +56,7 @@ const Footer = () => {
                     <Link href='/category/press'><a>Press</a></Link>
                 </li>
             </ul>
-        
+
         <ul className='six'>
             <li className='ul_head'>
                 <Link href='/contact'><a>Contact</a></Link>
@@ -67,14 +67,16 @@ const Footer = () => {
             <li>
                 <a href='mailto:AdanuGhana@adanu.org/office@adanu.org'>AdanuGhana@adanu.org/office@adanu.org</a>
             </li>
- 
+
             {/*Begin MailChimp Signup Form*/}
             <div id='mc_embed_signup'>
                 <form action='http://adanu.us8.list-manage.com/subscribe/post?u=8424bffe1e6f6a5fc1a13c32d&amp;id=4d62196ecb' method='post'
-                 id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' className='validate' target='_blank' noValidate>
-                    <div id='mc_embed_signup_scroll'>  
-                        {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
-                        <div style={{position: 'absolute', left: '-5000px' }}>
+                 id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' className='validate'
+                  target='_blank' noValidate>
+                    <div id='mc_embed_signup_scroll'>
+                        {/* real people should not fill this in and expect good things -
+                         do not remove this or risk form bot signups*/}
+                        <div style={{ position: 'absolute', left: '-5000px' }}>
                             <input type='text' name='b_8424bffe1e6f6a5fc1a13c32d_bbc79d83f5' tabIndex={-1} value=''/>
                         </div>
                         <div className='clear'>
@@ -84,8 +86,8 @@ const Footer = () => {
                     </div>
                 </form>
             </div>
-                
-            {/*End mc_embed_signup*/}  
+
+            {/*End mc_embed_signup*/}
         </ul>
         <ul className='six social_foot'>
             <li className='ul_head'>
@@ -113,7 +115,7 @@ const Footer = () => {
                     </a>
                 </li>
             </ul>
-        </ul>   
+        </ul>
     </nav>
     <div className='basestrip'>
         <span className='copyright'>&#169;2018 Adanu</span>
@@ -121,8 +123,8 @@ const Footer = () => {
             <Link href='/privacy-policy'><a>Privacy Policy</a></Link>
         </span>
         <span className='strapline'>inspiring communities together</span>
-    </div>    
-	
+    </div>
+
     <div className='basestrip align-middle'>
         <a href='http://www.guidestar.org/organizations/46-1989395/american-friends- divog.aspx'>
             <img src='/images/GuideStar_logo_lightfont-e1459799299128.png'/>

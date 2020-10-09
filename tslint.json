@@ -2,7 +2,19 @@
     "extends": ["tslint-config-airbnb"],
     "rules": {
       "import-name": false,
-      "align": false,
+      "indent": [ true, "spaces", 4 ],
+      "quotemark": [ true, "single" ],
+      "max-line-length": [ true, 120 ],
+      "comment-format": [
+        true,
+        "check-space",
+        { "ignore-words": [ "TODO", "HACK" ] }
+      ],
+      "no-else-after-return": [
+        true,
+        "allow-else-if"
+      ],
+        "align": false,
       "function-name": [
         true,
         {

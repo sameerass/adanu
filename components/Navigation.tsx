@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const Navigation = () => {
-    return (<nav className='menu_wrapper'>
+  return (<nav className='menu_wrapper'>
                 <div className='menu-topmenu-container'>
                     <ul id='menu-topmenu' className='menu'>
                         <li id='menu-item-32' className='menu-item menu-item-type-post_type menu-item-object-page menu-item-32'>
@@ -23,8 +23,8 @@ const Navigation = () => {
                             <Link href='/about'><a>About</a></Link>
                         </li>
                     </ul>
-                </div>  
-            </nav> );
-}
+                </div>
+            </nav>);
+};
 
 export default Navigation;

@@ -5,13 +5,13 @@ import Footer from './Footer';
 import { ReactNode } from 'react';
 
 interface IProps {
-    title: string;
-    children?: ReactNode;
+  title: string;
+  children?: ReactNode;
 }
 const Layout = (props: IProps) => {
-    return (<div>
+  return (<div>
         <Head>
-	        <title>Adanu | {props.title} |inspiring communities together</title>
+            <title>Adanu | {props.title} |inspiring communities together</title>
             <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'/>
             <link rel='shortcut icon' href='favicon.ico' />
             <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
@@ -22,6 +22,6 @@ const Layout = (props: IProps) => {
         {props.children}
         <Footer/>
     </div>);
-}
+};
 
 export default Layout;

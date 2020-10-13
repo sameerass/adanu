@@ -1,10 +1,22 @@
 import Link from 'next/link';
 import Navigation from './Navigation';
+import MobileNavigation from'./MobileNavigation';
+import { Component } from 'react';
 
-const Header = () => {
-  return (<header className='green'>
+interface IState {
+  showMenu: boolean;
+}
+
+export default class Header extends Component<any, IState> {
+  constructor(props: any) {
+    super(props);
+    this.state = { showMenu: false };
+  }
+  render() {
+    return (<div className='header-wrapper'>
+      <header className='green'>
             <Link href='/'><a className='logo yellow'>Adanu</a></Link>
-            <a className='mobile hamburger'>Menu</a>
+            <a className='mobile hamburger' onClick={() => this.toggleMobileMenu()}>Menu</a>
             <Navigation/>
             <div className='social'>
                 <a className='donate' href='https://pushpay.com/pay/adanurenton'>donate</a>
@@ -29,9 +41,16 @@ const Header = () => {
                             <img src='/images/instagram.png'/>
                         </a>
                     </li>
-                    </ul>
+                  </ul>
             </div>
-        </header>);
-};
+        </header>
+        <MobileNavigation showMenu={this.state.showMenu}/>
+        </div>);
+  }
 
-export default Header;
+  toggleMobileMenu() {
+    this.setState({
+      showMenu: !this.state.showMenu,
+    });
+  }
+}

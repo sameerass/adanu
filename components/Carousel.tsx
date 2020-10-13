@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Carousel = () => {
   return (<div className='slider'>
-              <div className='cycle-slideshow' 
+              <div className='cycle-slideshow'
                 data-cycle-fx={'scrollHorz'}
                 data-cycle-timeout={5000}
                 data-cycle-slides={'> div'}

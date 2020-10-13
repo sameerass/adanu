@@ -1,12 +1,13 @@
 import Link from 'next/link';
 
-const MobileNavigation = () => {
-  return(<nav className='mobile_hide mobile_menu_wrapper'>
+interface IProps {
+  showMenu: boolean;
+}
+
+const MobileNavigation = (props: IProps) => {
+  return(<nav className={`mobile_hide mobile_menu_wrapper${props.showMenu ? ' mobile_show' : ''}`}>
             <div className='menu-mobilemenu-container'>
                 <ul id='menu-mobilemenu' className='menu'>
-                    <li id='menu-item-103' className='menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-103'>
-                        <Link href='/'><a>Home</a></Link>
-                    </li>
                     <li id='menu-item-109' className='menu-item menu-item-type-post_type menu-item-object-page menu-item-109'>
                         <Link href='/approach'><a>Approach</a></Link>
                     </li>

@@ -7,16 +7,12 @@ interface IProps {
   title?: string;
 }
 
-export default class Image extends Component<IProps, any> {
-  constructor(props: IProps) {
-    super(props);
-  }
-  render() {
-    return(<div className='twentyfive_si'>
-    <Link href={this.props.url}>
-     <a className='fancybox' rel='group' title={this.props.title || ''}>
-        <img width={this.props.width} height={this.props.height}
-        src={this.props.url}
+const Image = (props: IProps) => {
+  return(<div className='twentyfive_si'>
+    <Link href={props.url}>
+     <a className='fancybox' rel='group' title={props.title || ''}>
+        <img width={props.width} height={props.height}
+        src={props.url}
         className='attachment-large size-large' alt=''
         sizes={`(max-width: ${props.width}px) 100vw, ${props.width}px`}/>
      </a>

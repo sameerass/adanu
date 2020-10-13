@@ -1,4 +1,3 @@
-import { Component } from 'react';
 import Link from 'next/link';
 
 interface IProps {
@@ -19,9 +18,10 @@ export default class Image extends Component<IProps, any> {
         <img width={this.props.width} height={this.props.height}
         src={this.props.url}
         className='attachment-large size-large' alt=''
-        sizes={`(max-width: ${this.props.width}px) 100vw, ${this.props.width}px`}/>
+        sizes={`(max-width: ${props.width}px) 100vw, ${props.width}px`}/>
      </a>
     </Link>
   </div>);
-  }
-}
+};
+
+export default Image;

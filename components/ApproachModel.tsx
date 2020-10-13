@@ -1,25 +1,23 @@
-import { Component } from 'react';
+import { ReactNode } from 'react';
 
 interface IProps {
   imgUrl: string;
   title: string;
+  children?: ReactNode;
 }
 
-export default class ApproachModel extends Component<IProps, any> {
-  constructor(props: IProps) {
-    super(props);
-  }
-  render() {
-    return(<div className='row vertigo'>
+const ApproachModel = (props: IProps) => {
+  return (<div className='row vertigo'>
               <div className='thirty'>
-                <img className='thirty_icon' src={this.props.imgUrl} />
+                <img className='thirty_icon' src={props.imgUrl} />
               </div>
               <div className='seventy'>
-                  <h3>{this.props.title}</h3>
+                  <h3>{props.title}</h3>
                 <p>
-                  {this.props.children}
+                  {props.children}
                 </p>
               </div>
             </div>);
-  }
-}
+};
+
+export default ApproachModel;

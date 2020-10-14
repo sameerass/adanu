@@ -325,7 +325,7 @@ header a    {
         padding-bottom: 45px;
         overflow: hidden;
         }
-.page-id-29 .blue h2 {
+.approach-container .blue h2 {
         margin-top: 60px !important;
         margin-bottom: 60px !important;
         }
@@ -1579,7 +1579,7 @@ a.black_cta:hover {border: 5px solid #fff;}
 
 /* IMG Gallery */
 
-.secondary_ { overflow: hidden; background: #222222;}
+.secondary_images { overflow: hidden; background: #222222;}
 .twentyfive_si {width: 25%; float: left; padding: 0px; margin: 0px; overflow: hidden;}
 .twentyfive_si img { width: 100% !important; height: auto !important;}
 a.fancybox { 

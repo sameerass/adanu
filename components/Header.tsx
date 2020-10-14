@@ -1,10 +1,18 @@
 import Link from 'next/link';
 import Navigation from './Navigation';
+import MobileNavigation from'./MobileNavigation';
+import { useState } from 'react';
+
+interface IState {
+  showMenu: boolean;
+}
 
 const Header = () => {
-  return (<header className='green'>
+  const [showMenu, toggleMobileMenu] = useState(false);
+  return (<div className='header-wrapper'>
+      <header className='green'>
             <Link href='/'><a className='logo yellow'>Adanu</a></Link>
-            <a className='mobile hamburger'>Menu</a>
+            <a className='mobile hamburger' onClick={() => toggleMobileMenu(!showMenu)}>Menu</a>
             <Navigation/>
             <div className='social'>
                 <a className='donate' href='https://pushpay.com/pay/adanurenton'>donate</a>
@@ -29,9 +37,11 @@ const Header = () => {
                             <img src='/images/instagram.png'/>
                         </a>
                     </li>
-                    </ul>
+                  </ul>
             </div>
-        </header>);
+        </header>
+        <MobileNavigation showMenu={showMenu}/>
+      </div>);
 };
 
 export default Header;

@@ -3,10 +3,6 @@ import Navigation from './Navigation';
 import MobileNavigation from'./MobileNavigation';
 import { useState } from 'react';
 
-interface IState {
-  showMenu: boolean;
-}
-
 const Header = () => {
   const [showMenu, toggleMobileMenu] = useState(false);
   return (<div className='header-wrapper'>

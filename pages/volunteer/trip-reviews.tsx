@@ -1,7 +1,7 @@
 import VolunteerLayout from '../../components/volunteer/Layout';
 import LeaderBoard from '../../components/LeaderBoard';
 
-// TO-DO - Form submit
+// TO-DO - Form submit needs to be fixed
 const TripReviews = () => {
   return (<VolunteerLayout title={'Volunteer'}>
         <div className='responsive_wrapper volunteer'>

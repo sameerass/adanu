@@ -1,12 +1,11 @@
-import { ReactNode } from 'react';
+import { PropsWithChildren } from 'react';
 
 interface IProps {
   imgUrl: string;
   title: string;
-  children?: ReactNode;
 }
 
-const ApproachModel = (props: IProps) => {
+const Model = (props: PropsWithChildren<IProps>) => {
   return (<div className='row vertigo'>
               <div className='thirty'>
                 <img className='thirty_icon' src={props.imgUrl} />
@@ -20,4 +19,4 @@ const ApproachModel = (props: IProps) => {
             </div>);
 };
 
-export default ApproachModel;
+export default Model;

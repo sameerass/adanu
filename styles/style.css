@@ -2499,14 +2499,3 @@ width: 130%;
 .align-middle {
         text-align: center;
 }
-
-.general-content-padding {
-        padding-left: 20px;
-        padding-right: 20px;
-}
-
-.aligncenter {
-        width: 2000px;
-        height: 5px;
-        background-color: #231f20;
-}

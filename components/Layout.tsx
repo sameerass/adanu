@@ -1,12 +1,14 @@
 import Head from 'next/head';
 import Header from './Header';
+import MobileNavigation from'./MobileNavigation';
 import Footer from './Footer';
-import { PropsWithChildren } from 'react';
+import { ReactNode } from 'react';
 
-export interface IProps {
+interface IProps {
   title: string;
+  children?: ReactNode;
 }
-const Layout = (props: PropsWithChildren<IProps>) => {
+const Layout = (props: IProps) => {
   return (<div>
         <Head>
             <title>Adanu | {props.title} |inspiring communities together</title>

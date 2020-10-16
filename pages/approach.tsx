@@ -1,33 +1,24 @@
 import Layout from '../components/Layout';
 import Image from '../components/Image';
-import ApproachModel from '../components/ApproachModel';
-import Link from 'next/link';
+import Model from '../components/approach/Model';
+import Nav from '../components/utils/Nav';
+import NavLink from '../components/utils/NavLink';
+import LeaderBoard from '../components/LeaderBoard';
 
 const Approach = () => {
   return (<Layout title={'Approach'}>
     <div className='approach-container'>
-      <nav className='submenu conditional_menu'>
-        <div className='menu-approach-sub-menu-container'>
-          <ul id='menu-approach-sub-menu' className='menu'>
-            <li id='menu-item-83' className='menu-item menu-item-type-post_type menu-item-object-page
-             current-menu-item page_item page-item-29 current_page_item menu-item-83'>
-              <Link href='/approach'><a>Learn our philosophy</a></Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Nav className='submenu conditional_menu'>
+          <NavLink href='/approach'>Learn our philosophy</NavLink>
+      </Nav>
       <div className='responsive_wrapper'>
-        <div className='row dark'>
-          <section className='leaderboard'>
-            <h2>
-              We believe in EMPOWERMENT, not CHARITY…<br />
-              We believe that EDUCATION leads to POSSIBILITY…<br />
-              We believe that COLLABORATION creates COMMUNITY…<br />
-              We believe that COMMUNITY fosters SUSTAINABLE DEVELOPMENT…<br />
-              We believe that SUSTAINABLE DEVELOPMENT ignites GLOBAL CHANGE…
-            </h2>
-          </section>
-        </div>
+        <LeaderBoard>
+          We believe in EMPOWERMENT, not CHARITY…<br />
+          We believe that EDUCATION leads to POSSIBILITY…<br />
+          We believe that COLLABORATION creates COMMUNITY…<br />
+          We believe that COMMUNITY fosters SUSTAINABLE DEVELOPMENT…<br />
+          We believe that SUSTAINABLE DEVELOPMENT ignites GLOBAL CHANGE…
+        </LeaderBoard>
         {/* Video & text Area */}
 
         <div className='row blue'>
@@ -90,26 +81,26 @@ const Approach = () => {
             <h2>our model</h2>
 
             {/*Community Selection*/}
-            <ApproachModel title={'Community Selection'} imgUrl={'/images/selection_icon.png'}>
+            <Model title={'Community Selection'} imgUrl={'/images/selection_icon.png'}>
                 Adanu selects communities based on their level of need and willingness to contribute a
                 significant portion of time, labor and materials to the project.
                 Adanu specifically targets communities that have been neglected by the government.
-            </ApproachModel>
+            </Model>
 
             {/* Community Engage */}
-            <ApproachModel title={'Community Engagement'} imgUrl={'/images/engage_icon.png'}>
+            <Model title={'Community Engagement'} imgUrl={'/images/engage_icon.png'}>
                 Adanu’s model and expectations are clearly communicated to the community,
                 community-led working committees are formed, and resources are committed to the project.
                 Community members and leaders drive the project to completion.
-            </ApproachModel>
+            </Model>
 
             {/* Community Partner */}
-            <ApproachModel title={'Community Partnership'} imgUrl={'/images/partner_icon.png'}>
+            <Model title={'Community Partnership'} imgUrl={'/images/partner_icon.png'}>
                 Adanu supervises critical stages of the project, and checks in regularly with working
                 committees to keep the community accountable and on track. Volunteers engage with the
                 community at different stages of the project to develop relationships, provide encouragement
                 and support projects.
-            </ApproachModel>
+            </Model>
         </section>
         </div>
       </div>

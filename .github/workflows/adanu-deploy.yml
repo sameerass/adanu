@@ -25,9 +25,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-      env:
-        NODE_ENV: production
-        NEXT_PUBLIC_BASE_PATH: /adanu
     - run: npm run build
       env:
         NODE_ENV: production

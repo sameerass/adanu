@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[8],{"/t5e":function(n,t,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/adanubook",function(){return o("YF+S")}])},"YF+S":function(n,t,o){"use strict";o.r(t);var e=o("q1tI"),u=o.n(e),_=o("apO0"),a=u.a.createElement;t.default=function(){return a(_.a,{title:"AdanuBook"})}}},[["/t5e",0,2,1,3]]]);

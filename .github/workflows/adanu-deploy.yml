@@ -25,7 +25,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
+      env:
+        NODE_ENV: production
+        NEXT_PUBLIC_BASE_PATH: /adanu
     - run: npm run build
+      env:
+        NODE_ENV: production
+        NEXT_PUBLIC_BASE_PATH: /adanu
+    - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.7.1

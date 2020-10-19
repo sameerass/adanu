@@ -4,6 +4,7 @@ import Model from '../components/approach/Model';
 import Nav from '../components/utils/Nav';
 import NavLink from '../components/utils/NavLink';
 import LeaderBoard from '../components/LeaderBoard';
+import { PREFIX } from '../constants';
 
 const Approach = () => {
   return (<Layout title={'Approach'}>
@@ -66,13 +67,13 @@ const Approach = () => {
 
         {/* Secondary Image Gallery */}
         <div className='secondary_images'>
-          <Image url={'/uploads/2014/07/1974988_10154631416030128_7358816736689733004_n1.jpg'}
+          <Image url={`/${PREFIX}/uploads/2014/07/1974988_10154631416030128_7358816736689733004_n1.jpg`}
                  height={360} width={480} title={'title test'} />
-          <Image url={'/uploads/2014/07/10644454_10154631413650128_7932739558533883977_n1.jpg'}
+          <Image url={`/${PREFIX}/uploads/2014/07/10644454_10154631413650128_7932739558533883977_n1.jpg`}
                  height={720} width={960} />
-          <Image url={'/uploads/2014/07/ap_4-1024x768.jpg'}
+          <Image url={`/${PREFIX}/uploads/2014/07/ap_4-1024x768.jpg`}
                  height={768} width={1024} />
-          <Image url={'/uploads/2014/07/10672309_10154646603290128_8945814608324850995_n1-e1412181215726.jpg'}
+          <Image url={`/${PREFIX}/uploads/2014/07/10672309_10154646603290128_8945814608324850995_n1-e1412181215726.jpg`}
                  height={588} width={780} />
         </div>
         {/*Our Model*/}
@@ -81,21 +82,21 @@ const Approach = () => {
             <h2>our model</h2>
 
             {/*Community Selection*/}
-            <Model title={'Community Selection'} imgUrl={'/images/selection_icon.png'}>
+            <Model title={'Community Selection'} imgUrl={`/${PREFIX}/images/selection_icon.png`}>
                 Adanu selects communities based on their level of need and willingness to contribute a
                 significant portion of time, labor and materials to the project.
                 Adanu specifically targets communities that have been neglected by the government.
             </Model>
 
             {/* Community Engage */}
-            <Model title={'Community Engagement'} imgUrl={'/images/engage_icon.png'}>
+            <Model title={'Community Engagement'} imgUrl={`/${PREFIX}/images/engage_icon.png`}>
                 Adanu’s model and expectations are clearly communicated to the community,
                 community-led working committees are formed, and resources are committed to the project.
                 Community members and leaders drive the project to completion.
             </Model>
 
             {/* Community Partner */}
-            <Model title={'Community Partnership'} imgUrl={'/images/partner_icon.png'}>
+            <Model title={'Community Partnership'} imgUrl={`/${PREFIX}/images/partner_icon.png`}>
                 Adanu supervises critical stages of the project, and checks in regularly with working
                 committees to keep the community accountable and on track. Volunteers engage with the
                 community at different stages of the project to develop relationships, provide encouragement

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { PREFIX } from '../constants';
 
 const Footer = () => {
   return (<footer>
@@ -96,22 +97,22 @@ const Footer = () => {
             <ul className='social_narrow'>
                 <li>
                     <a href='https://itunes.apple.com/us/app/adanu/id1165156556?mt=8' target='_blank' className='twoup_1'>
-                        <img src='/images/shop_yellow.png'/>
+                        <img src={`/${PREFIX}/images/shop_yellow.png`}/>
                     </a>
                 </li>
                 <li>
                     <a href='https://www.facebook.com/AdanuGhana/' target='_blank' className='twoup_2'>
-                        <img src='/images/facebook_yellow.png'/>
+                        <img src={`/${PREFIX}/images/facebook_yellow.png`}/>
                     </a>
                 </li>
                 <li className='clr'>
                     <a href='https://twitter.com/adanughana' target='_blank' className='twoup_3'>
-                        <img src='/images/twitter_yellow.png'/>
+                        <img src={`/${PREFIX}/images/twitter_yellow.png`}/>
                     </a>
                 </li>
                 <li>
                     <a href='http://instagram.com/AdanuGhana' target='_blank' className='twoup_4'>
-                        <img src='/images/instagram_yellow.png'/>
+                        <img src={`/${PREFIX}/images/instagram_yellow.png`}/>
                     </a>
                 </li>
             </ul>
@@ -127,7 +128,7 @@ const Footer = () => {
 
     <div className='basestrip align-middle'>
         <a href='http://www.guidestar.org/organizations/46-1989395/american-friends- divog.aspx'>
-            <img src='/images/GuideStar_logo_lightfont-e1459799299128.png'/>
+            <img src={`/${PREFIX}/images/GuideStar_logo_lightfont-e1459799299128.png`}/>
         </a>
     </div>
 </footer>);

@@ -28,6 +28,7 @@ jobs:
     - run: npm run build
       env:
         NODE_ENV: production
+        PUBLIC_URL: https://sameerass.github.io/
         NEXT_PUBLIC_BASE_PATH: /adanu
     - run: touch ./out/.nojekyll
     

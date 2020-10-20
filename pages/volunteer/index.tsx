@@ -2,7 +2,6 @@ import VolunteerLayout from '../../components/volunteer/Layout';
 import LeaderBoard from '../../components/LeaderBoard';
 import ItinaryRow from '../../components/volunteer/ItinaryRow';
 import Image from '../../components/Image';
-import { PREFIX } from '../../constants';
 
 const Volunteer = () => {
   return (<VolunteerLayout title={'Volunteer'}>
@@ -180,13 +179,13 @@ const Volunteer = () => {
 
             {/* <!-- Secondary Image Gallery --> */}
             <div className='secondary_images'>
-                <Image url={`${PREFIX}/uploads/2014/07/vill-e1412182208734.jpg`}
+                <Image url={`uploads/2014/07/vill-e1412182208734.jpg`}
                        height={526} width={700} title={'Making friends'} />
-                <Image url={`${PREFIX}/uploads/2014/07/go2-1024x768.jpg`}
+                <Image url={`uploads/2014/07/go2-1024x768.jpg`}
                        height={768} width={1024} title={'Carrying Water'}/>
-                <Image url={`${PREFIX}/uploads/2014/07/Waterfall-love-e1482348213777-1024x770.jpg`}
+                <Image url={`uploads/2014/07/Waterfall-love-e1482348213777-1024x770.jpg`}
                        height={770} width={1024} title={'Waterfall'}/>
-                <Image url={`${PREFIX}/uploads/2014/07/go1-1024x768.jpg`}
+                <Image url={`uploads/2014/07/go1-1024x768.jpg`}
                        height={768} width={1024} title={'Dancing'}/>
             </div>
         </div>

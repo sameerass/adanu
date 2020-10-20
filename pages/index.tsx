@@ -1,7 +1,6 @@
 import Layout from '../components/Layout';
 import Carousel from '../components/Carousel';
 import Link from 'next/link';
-import { PREFIX } from '../constants';
 
 const HomePage = () => {
   return (<Layout title={'Home Page'}>
@@ -18,7 +17,7 @@ const HomePage = () => {
             <div className='row  yellow'>
                 <section className='responsive_wrap_fullwidth'>
                   <article className='thirtythree'>
-                    <img className='box-title-image' src={`${PREFIX}/images/who.png`}/>
+                    <img className='box-title-image' src={`images/who.png`}/>
                     <h2>Who</h2>
                     <h3>Adanu + You</h3>
                     <p>
@@ -30,7 +29,7 @@ const HomePage = () => {
                     </p>
                   </article>
                   <article className='thirtythree'>
-                    <img className='box-title-image' src={`${PREFIX}/images/what.png`}/>
+                    <img className='box-title-image' src={`images/what.png`}/>
                     <h2>What</h2>
                     <h3>Community-Led Projects</h3>
                     <p>
@@ -43,7 +42,7 @@ const HomePage = () => {
                     </p>
                   </article>
                   <article className='thirtythree'>
-                    <img className='box-title-image' src={`${PREFIX}/images/why.png`}/>
+                    <img className='box-title-image' src={`images/why.png`}/>
                     <h2>Why</h2>
                     <h3>Empowerment & Hope</h3>
                     <p>

@@ -368,7 +368,7 @@ a.logo {
         text-indent:100%;
         white-space:nowrap;
         /* Revise on live Site */
-        background: url(/images/adanu_logo.png) #FFC420 no-repeat top left;
+        background: url(../public/images/adanu_logo.png) #FFC420 no-repeat top left;
         background-size: 100%;
         float: left;
   }
@@ -478,7 +478,7 @@ ul.scocial_icons {} /* WHY ? */
 .submenu .current-post-parent a {color: #fff;}
 .submenu ul li.current-menu-item,
 .submenu .current-post-parent {
-        background: url(/images/green_arrow.png) top center no-repeat;
+        background: url(../public/images/green_arrow.png) top center no-repeat;
         background-size: 20px 15px;
         }
 /* Leader Board */
@@ -1172,7 +1172,7 @@ a.more-link {
         margin-top: 30px; 
         width: 80%; 
         height: 45px;
-        background: url(/images/search.png) no-repeat right ;
+        background: url(../public/images/search.png) no-repeat right ;
         background-position: 97% 7px;
         -webkit-appearance: none;
         margin-bottom: 60px !important;
@@ -1532,10 +1532,10 @@ input#input_1_5_1 { margin-top: 20px;}
         overflow: hidden;
          }
 /* left Minified for easy modding -- TODO Space and Tab This - */
-.slide_1 {background:  #000 url(/images/s1_kids.jpg) no-repeat center; background-size: 100%;}
-.slide_2 {background:  #000 url(/images/meet_blue.jpg) no-repeat center;}
-.slide_3 {background:  url(/images/s3_shirts.jpg) no-repeat top center; }
-.slide_4 {background:  url(/images/s3_shirts.jpg) no-repeat top center; }
+.slide_1 {background:  #000 url(../public/images/s1_kids.jpg) no-repeat center; background-size: 100%;}
+.slide_2 {background:  #000 url(../public/images/meet_blue.jpg) no-repeat center;}
+.slide_3 {background:  url(../public/images/s3_shirts.jpg) no-repeat top center; }
+.slide_4 {background:  url(../public/images/s3_shirts.jpg) no-repeat top center; }
 .slide_5 {background: #777;}
 .slide_6 {background: #888;}
 
@@ -1675,7 +1675,7 @@ a.fancybox:hover img{ opacity: 0.8 }
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url('/images/fancybox_sprite.png');
+	background-image: url('../public/images/fancybox_sprite.png');
 }
 
 #fancybox-loading {
@@ -1693,7 +1693,7 @@ a.fancybox:hover img{ opacity: 0.8 }
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
-	background: url('/images/fancybox_loading.gif') center center no-repeat;
+	background: url('../public/images/fancybox_loading.gif') center center no-repeat;
 }
 
 .fancybox-close {
@@ -1713,7 +1713,7 @@ a.fancybox:hover img{ opacity: 0.8 }
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;
-	background: transparent url('/images/blank.gif'); /* helps IE */
+	background: transparent url('../public/images/blank.gif'); /* helps IE */
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	z-index: 8040;
 }
@@ -1783,7 +1783,7 @@ a.fancybox:hover img{ opacity: 0.8 }
 	overflow: hidden;
 	display: none;
 	z-index: 8010;
-	background: url('/images/fancybox_overlay.png');
+	background: url('../public/images/fancybox_overlay.png');
 }
 
 .fancybox-overlay-fixed {
@@ -1862,12 +1862,12 @@ a.fancybox:hover img{ opacity: 0.8 }
 	   only screen and (min-device-pixel-ratio: 1.5){
 
 	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-		background-image: url('/images/fancybox_sprite%402x.png');
+		background-image: url('../public/images/fancybox_sprite%402x.png');
 		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 
 	#fancybox-loading div {
-		background-image: url('/images/fancybox_loading%402x.gif');
+		background-image: url('../public/images/fancybox_loading%402x.gif');
 		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 }
@@ -1879,7 +1879,7 @@ a.fancybox:hover img{ opacity: 0.8 }
         height: 105px;
         width: 100%;
         background: #58C8E9;
-        background-image: url(/images/footer_blue_bkg.png);
+        background-image: url(../public/images/footer_blue_bkg.png);
         background-position: 0px 9px;
         }
 footer {
@@ -2003,16 +2003,16 @@ and (max-device-width: 640px )
          height: 250px;
          }
         /* Slide Specific Fixes */
-        .slide_1 {background:  #000 url(/images/s1_kids_ip.jpg) no-repeat center; }
-        .slide_2 {background:  #000 url(/images/meet_ip_blue.jpg) no-repeat center right;  }
+        .slide_1 {background:  #000 url(../public/images/s1_kids_ip.jpg) no-repeat center; }
+        .slide_2 {background:  #000 url(../public/images/meet_ip_blue.jpg) no-repeat center right;  }
         .slide_2 {background-size: auto 250px; background-position:  0px 0px !important;  }
-        .slide_3 {background:  url(/images/s3_shirts_ip.jpg) no-repeat top; }
+        .slide_3 {background:  url(../public/images/s3_shirts_ip.jpg) no-repeat top; }
         .slide_1 {background-size: auto 380px; }
         .slide_2 {background-size: auto 380px; background-position: 0 -0px;  }
         .slide_3 {background-size: auto 380px; }
         a.boxed  {margin-top: 90px; width: 300px;}
         a.yellow_cta, a.black_cta {font-size: 20px}    
-        .slide_4 {background:  url(/images/s3_shirts.jpg) no-repeat top center; }  
+        .slide_4 {background:  url(../public/images/s3_shirts.jpg) no-repeat top center; }  
 
         
         /* Close Out */        
@@ -2078,10 +2078,10 @@ and (max-device-width : 480px) {
          height: 250px; /* Note: change for mobile */
          }
     /* Slide Specific Fixes */
-    .slide_1 {background:  #000 url(/images/s1_kids_ip.jpg) no-repeat center; }
-    .slide_2 {background:  #000 url(/images/meet_ip_blue.jpg) no-repeat center right;  }
-    .slide_3 {background:  url(/images/s3_shirts_ip.jpg) no-repeat top; }
-    .slide_4 {background:  url(/images/book_ip.jpg) no-repeat top center; }
+    .slide_1 {background:  #000 url(../public/images/s1_kids_ip.jpg) no-repeat center; }
+    .slide_2 {background:  #000 url(../public/images/meet_ip_blue.jpg) no-repeat center right;  }
+    .slide_3 {background:  url(../public/images/s3_shirts_ip.jpg) no-repeat top; }
+    .slide_4 {background:  url(../public/images/book_ip.jpg) no-repeat top center; }
     a.boxed  {margin-top: 90px; width: 300px;}
     a.yellow_cta, a.black_cta {font-size: 20px}
     
@@ -2133,16 +2133,16 @@ and (max-device-width : 640px)
          height: 250px; /* Note: change for mobile */
          }
     /* Slide Specific Fixes */
-    .slide_1 {background:  #000 url(/images/s1_kids_ip.jpg) no-repeat center; }
-    .slide_2 {background:  #000 url(/images/meet_ip_blue.jpg) no-repeat center right;  }
-    .slide_3 {background:  url(/images/s3_shirts_ip.jpg) no-repeat top; }
+    .slide_1 {background:  #000 url(../public/images/s1_kids_ip.jpg) no-repeat center; }
+    .slide_2 {background:  #000 url(../public/images/meet_ip_blue.jpg) no-repeat center right;  }
+    .slide_3 {background:  url(../public/images/s3_shirts_ip.jpg) no-repeat top; }
     .slide_3 .black_cta {background: rgba(244, 64, 53, 0.7); }
     .slide_2 .black_cta {background: rgba(255, 199, 0, 0.9); float: none; margin-right: auto;}
         a.boxed  {margin-top: 90px; width: 300px;}
         a.yellow_cta, a.black_cta {font-size: 20px}
         a.black_cta {}
        nav.menu_wrapper, .social_icons {display: none;}
-    .slide_4 {background:  url(/images/meet_blue_ip.html) no-repeat top center; }
+    /* .slide_4 {background:  url(../public/images/meet_blue_ip.html) no-repeat top center; } */
        
        
     /*  header fixes */
@@ -2155,7 +2155,7 @@ and (max-device-width : 640px)
         text-indent:100%;
         white-space:nowrap;
         /* Revise on live Site */
-        background: url(/images/adanu_logo.png) #FFC420 no-repeat top left;
+        background: url(../public/images/adanu_logo.png) #FFC420 no-repeat top left;
         background-size: 100%;
         float: left;
            }
@@ -2186,7 +2186,7 @@ and (max-device-width : 640px)
         float: left;
         padding-top: 20px;
         margin-top: 15px;
-        background: url(/images/mobile_menu.png) no-repeat top center;
+        background: url(../public/images/mobile_menu.png) no-repeat top center;
         background-size: 35px;
         font-size: 14px;
         font-weight: bold;

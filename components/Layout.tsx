@@ -7,7 +7,7 @@ import { PREFIX } from '../constants';
 export interface IProps {
   title: string;
 }
-const baseUrl = process.env.NODE_ENV + (process.env.NEXT_PUBLIC_BASE_PATH || '');
+const baseUrl = process.env.PUBLIC_URL + (process.env.NEXT_PUBLIC_BASE_PATH || '');
 const Layout = (props: PropsWithChildren<IProps>) => {
   return (<div>
         <Head>

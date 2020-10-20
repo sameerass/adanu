@@ -107,12 +107,12 @@ const Footer = () => {
                 </li>
                 <li className='clr'>
                     <a href='https://twitter.com/adanughana' target='_blank' className='twoup_3'>
-                        <img src={`/${PREFIX}/images/twitter_yellow.png`}/>
+                        <img src={`${PREFIX}/images/twitter_yellow.png`}/>
                     </a>
                 </li>
                 <li>
                     <a href='http://instagram.com/AdanuGhana' target='_blank' className='twoup_4'>
-                        <img src={`/${PREFIX}/images/instagram_yellow.png`}/>
+                        <img src={`${PREFIX}/images/instagram_yellow.png`}/>
                     </a>
                 </li>
             </ul>

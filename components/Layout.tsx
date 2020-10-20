@@ -14,8 +14,8 @@ const Layout = (props: PropsWithChildren<IProps>) => {
             <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'/>
             <base href={`${baseUrl}/`} />
             <link rel='shortcut icon' href={`favicon.ico`} />
-            <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
-            <script src='http://malsup.github.com/jquery.cycle2.js'></script>
+            <script src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+            <script src='https://malsup.github.com/jquery.cycle2.js'></script>
         </Head>
         <Header/>
         {props.children}

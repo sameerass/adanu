@@ -16,22 +16,22 @@ const Header = () => {
                 <ul className='social_icons'>
                     <li>
                         <a href='https://itunes.apple.com/us/app/adanu/id1165156556?mt=8' className='shop'>
-                            <img src={`/${PREFIX}/images/shop.png`}/>
+                            <img src={`${PREFIX}/images/shop.png`}/>
                         </a>
                     </li>
                     <li>
                         <a href='https://www.facebook.com/AdanuGhana/' className='fb'>
-                            <img src={`/${PREFIX}/images/facebook.png`}/>
+                            <img src={`${PREFIX}/images/facebook.png`}/>
                         </a>
                     </li>
                     <li>
                         <a href='https://twitter.com/adanughana' className='tw'>
-                            <img src={`/${PREFIX}/images/twitter.png`}/>
+                            <img src={`${PREFIX}/images/twitter.png`}/>
                         </a>
                     </li>
                     <li>
                         <a href='http://instagram.com/AdanuGhana' className='instagram'>
-                            <img src={`/${PREFIX}/images/instagram.png`}/>
+                            <img src={`${PREFIX}/images/instagram.png`}/>
                         </a>
                     </li>
                   </ul>

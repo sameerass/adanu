@@ -203,21 +203,21 @@ const WhatYouShouldKnow = () => {
                 </div>
                 {/*<!-- Visa & Passport -->*/}
                 <SideBarLink title={'Passport & Visa'} color={'blue'}
-                    url={`/${PREFIX}/uploads/2017/06/Passport-Visa.pdf`} linkName={'download'}>
+                    url={`${PREFIX}/uploads/2017/06/Passport-Visa.pdf`} linkName={'download'}>
                     It is suggested that you apply for a passport and visa at least
                     6 weeks before your departure date. Click the download button for more information.
                 </SideBarLink>
 
                 {/*<!-- Immunize  -->*/}
                 <SideBarLink title={'Immunizations'} color={'red'}
-                    url={`/${PREFIX}/uploads/2014/07/Immunizations.pdf`} linkName={'download'}>
+                    url={`${PREFIX}/uploads/2014/07/Immunizations.pdf`} linkName={'download'}>
                     Yellow Fever and Malaria immunizations/ prescriptions are required to travel to Ghana.
                     Other immunizations may be recommended. Click the download button for more information.
                 </SideBarLink>
 
                 {/*<!-- Packing List -->*/}
                 <SideBarLink title={'Packing List'} color={'green'}
-                    url={`/${PREFIX}/uploads/2014/07/Packing-List.pdf`} linkName={'download'}>
+                    url={`${PREFIX}/uploads/2014/07/Packing-List.pdf`} linkName={'download'}>
                      Click the download button for an abbreviated packing list, including clothing, toiletries,
                      and donation items. A comprehensive list will be provided with our Volunteer Guide
                      and is available on the Adanu app.

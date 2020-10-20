@@ -186,7 +186,7 @@ const Volunteer = () => {
                        height={768} width={1024} title={'Carrying Water'}/>
                 <Image url={`${PREFIX}/uploads/2014/07/Waterfall-love-e1482348213777-1024x770.jpg`}
                        height={770} width={1024} title={'Waterfall'}/>
-                <Image url={`/${PREFIX}/uploads/2014/07/go1-1024x768.jpg`}
+                <Image url={`${PREFIX}/uploads/2014/07/go1-1024x768.jpg`}
                        height={768} width={1024} title={'Dancing'}/>
             </div>
         </div>

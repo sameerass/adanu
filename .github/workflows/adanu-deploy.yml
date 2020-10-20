@@ -27,7 +27,6 @@ jobs:
     - run: npm ci
     - run: npm run build
       env:
-        NODE_ENV: production
         NEXT_PUBLIC_BASE_PATH: /adanu
     - run: touch ./out/.nojekyll
     

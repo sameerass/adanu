@@ -31,11 +31,13 @@ jobs:
     - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@3.7.1
-      with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          REPOSITORY_NAME: sameerass/adanu-public 
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: out # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
+      # Git task
+    - run: rm -rf .git  # remove git history and settings - to avoid inheritance
+    - run: git init # re-initialise git
+    - run: git config user.name "Sameera"
+    - run: git config user.email "sameerass"
+    - run: git remote set-url origin https://sameerass:${{ secrets.GIT_TOKEN }}@github.com/sameerass/adanu-public.git
+    - run: git add out # add and commit /out/ folder
+    - run: git commit -m "deploy the bundle"
+    - run: git push origin HEAD:master --force # push the commit to the public repository
+    - name: 'deploy the production bundle'
